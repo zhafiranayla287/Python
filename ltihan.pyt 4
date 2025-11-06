@@ -1,0 +1,72 @@
+def greeting():
+    x = 'hello word'
+    print(x)
+
+def hellostudent(name):
+    print('heloo', name)
+
+def getarea(length, width):
+    area = length * width
+    return area
+
+def getvol(l, w, h):
+    volume = l * w * h
+    return volume
+
+def giveA():
+    A = 10
+    return A
+
+def giveB():
+    B = 20
+    return B
+
+def checknum(num):
+    if num%2 == 0:
+        print(num, 'is even number')
+    else:
+        print(num, 'is odd number')
+
+def gettotal(qty, price):
+    total = qty * price
+    return total
+
+def checkday(d):
+    total = 0
+    if day == 'thursday':
+        total = gettotal(itemqty, itemprice)*0.9
+        return total
+    else: 
+        total = gettotal(itemqty, itemprice)
+        return total
+    
+
+greeting()
+hellostudent('zhafira')
+checknum(15)
+
+day = 'thursday'
+itemqty = 10
+itemprice = 1000
+totalprice = checkday(day)
+print('total price is', totalprice)
+
+
+length = 10
+width = 5
+height = 5
+area = getarea (length, width)
+vol = getvol(length, width, height )
+vol2 = getvol(50, 20, 10)
+print(area)
+print(vol)
+print(vol2)
+
+def checkvar(x):
+    myvar = 'this is local'
+    print(myvar)
+    print(x)
+
+myvar = 'this is global'
+checkvar(myvar)
+
